@@ -13,9 +13,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+#warning Чтобы все было по фен-шую, так называемый датасорс лучше вынести в другой класс, так называемый TableViewDataSource. Этот класс будет знать, какими данными можно заполнить таблицы. А вью контроллер будет спрашивать у него, какие есть данные для ячейки под таким-то индексом. Сейчас у тебя выходит, что вью контроллер не только занимается обработкой UI, но и является источником данных, что есть нехорошо
     self.images = [NSArray arrayWithObjects:@"dog.jpg", @"girl.jpeg", @"squirrel.jpeg", @"hart.jpeg", @"swan.jpeg", @"parrot.jpeg", @"kids.jpeg", @"bird.jpeg", @"death.jpg", @"duck.jpeg", @"puppy.jpeg", nil];
     self.titleOfImages = [NSArray arrayWithObjects:@"Dog", @"Girl", @"Squirrel", @"Hart", @"Swan", @"Parrot", @"Kids", @"Bird", @"Death", @"Duck", @"Puppy", nil];
     
+#warning Закомментированный код принято удалять. Если он тебе понадобиться в будущем, то с помощью гита ты сможешь откатиться на комиты, где этот код еще был, и скопировать его оттуда. И вообще, objective-c позволяет писать методы с такими именами, которые полностью объясняют суть данного метода, потому комментарии следует оставлять только в самых запутанных и неочевидных местах
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -41,6 +45,8 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+#warning Попробуй сама сделать ячейку, а не используй стандартное решените. Отнаследуйся от UITableViewCell, и на autolayout сделай ячейку с UILabel и UIImageView и попробуй ее заполнять данными. Заполнение лучше инкапсулировать в самой ячейке, то есть у ячейки нужен метод вроде setupWithText:image:.
+    
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -55,7 +61,6 @@
     
     return cell;
 }
-
 
 /*
 // Override to support conditional editing of the table view.

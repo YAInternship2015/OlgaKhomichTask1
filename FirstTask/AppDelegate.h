@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#warning Все классы в проекте должны начинать с трехбуквенной аббревиатуры, чтобы не было конфликтов с классами других разработчиков. Эти три буквы берутся из названия проекта.
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
