@@ -4,7 +4,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FPYTableViewController : UITableViewController
+@interface TableViewController : UITableViewController
 
 @property NSArray *images;
 @property NSArray *titleOfImages;

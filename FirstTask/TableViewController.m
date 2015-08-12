@@ -3,13 +3,13 @@
 //  
 
 
-#import "FPYTableViewController.h"
+#import "TableViewController.h"
 
-@interface FPYTableViewController ()
+@interface TableViewController ()
 
 @end
 
-@implementation FPYTableViewController
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
