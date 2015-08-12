@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		786F123C1B70E3EF00386135 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 786F123B1B70E3EF00386135 /* main.m */; };
-		786F123F1B70E3EF00386135 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 786F123E1B70E3EF00386135 /* AppDelegate.m */; };
 		786F12451B70E3EF00386135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F12431B70E3EF00386135 /* Main.storyboard */; };
 		786F12471B70E3EF00386135 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786F12461B70E3EF00386135 /* Images.xcassets */; };
 		786F124A1B70E3EF00386135 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786F12481B70E3EF00386135 /* LaunchScreen.xib */; };
 		786F12561B70E3EF00386135 /* FirstTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 786F12551B70E3EF00386135 /* FirstTaskTests.m */; };
-		78D168191B71300900CEFF30 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D168181B71300900CEFF30 /* TableViewController.m */; };
 		78E693011B737D0C00D38880 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693001B737D0C00D38880 /* dog.jpg */; };
 		78E693031B73881200D38880 /* girl.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693021B73881200D38880 /* girl.jpeg */; };
 		78E693051B73893200D38880 /* squirrel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693041B73893200D38880 /* squirrel.jpeg */; };
@@ -25,6 +23,8 @@
 		78E693111B738EBA00D38880 /* death.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693101B738EBA00D38880 /* death.jpg */; };
 		78E693131B738EE600D38880 /* duck.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693121B738EE600D38880 /* duck.jpeg */; };
 		78E693151B738F0F00D38880 /* puppy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693141B738F0F00D38880 /* puppy.jpeg */; };
+		78F09D131B7BAC83003BE73B /* FPYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F09D101B7BAC83003BE73B /* FPYAppDelegate.m */; };
+		78F09D141B7BAC83003BE73B /* FPYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F09D121B7BAC83003BE73B /* FPYTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,19 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		786F12361B70E3EF00386135 /* FirstTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		786F12361B70E3EF00386135 /* FirstProjectYalantis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProjectYalantis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F123A1B70E3EF00386135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786F123B1B70E3EF00386135 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		786F123D1B70E3EF00386135 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		786F123E1B70E3EF00386135 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		786F12441B70E3EF00386135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		786F12461B70E3EF00386135 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		786F12491B70E3EF00386135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		786F124F1B70E3EF00386135 /* FirstTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		786F124F1B70E3EF00386135 /* FirstProjectYalantis.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstProjectYalantis.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F12541B70E3EF00386135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786F12551B70E3EF00386135 /* FirstTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTaskTests.m; sourceTree = "<group>"; };
-		78D168171B71300900CEFF30 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		78D168181B71300900CEFF30 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		78E693001B737D0C00D38880 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		78E693021B73881200D38880 /* girl.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpeg; sourceTree = "<group>"; };
 		78E693041B73893200D38880 /* squirrel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = squirrel.jpeg; sourceTree = "<group>"; };
@@ -62,6 +58,10 @@
 		78E693101B738EBA00D38880 /* death.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = death.jpg; sourceTree = "<group>"; };
 		78E693121B738EE600D38880 /* duck.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck.jpeg; sourceTree = "<group>"; };
 		78E693141B738F0F00D38880 /* puppy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpeg; sourceTree = "<group>"; };
+		78F09D0F1B7BAC83003BE73B /* FPYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYAppDelegate.h; sourceTree = "<group>"; };
+		78F09D101B7BAC83003BE73B /* FPYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYAppDelegate.m; sourceTree = "<group>"; };
+		78F09D111B7BAC83003BE73B /* FPYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYTableViewController.h; sourceTree = "<group>"; };
+		78F09D121B7BAC83003BE73B /* FPYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 		786F12371B70E3EF00386135 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				786F12361B70E3EF00386135 /* FirstTask.app */,
-				786F124F1B70E3EF00386135 /* FirstTaskTests.xctest */,
+				786F12361B70E3EF00386135 /* FirstProjectYalantis.app */,
+				786F124F1B70E3EF00386135 /* FirstProjectYalantis.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,10 +103,10 @@
 		786F12381B70E3EF00386135 /* FirstTask */ = {
 			isa = PBXGroup;
 			children = (
-				78D168171B71300900CEFF30 /* TableViewController.h */,
-				78D168181B71300900CEFF30 /* TableViewController.m */,
-				786F123D1B70E3EF00386135 /* AppDelegate.h */,
-				786F123E1B70E3EF00386135 /* AppDelegate.m */,
+				78F09D0F1B7BAC83003BE73B /* FPYAppDelegate.h */,
+				78F09D101B7BAC83003BE73B /* FPYAppDelegate.m */,
+				78F09D111B7BAC83003BE73B /* FPYTableViewController.h */,
+				78F09D121B7BAC83003BE73B /* FPYTableViewController.m */,
 				786F12431B70E3EF00386135 /* Main.storyboard */,
 				786F12461B70E3EF00386135 /* Images.xcassets */,
 				786F12481B70E3EF00386135 /* LaunchScreen.xib */,
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		786F12351B70E3EF00386135 /* FirstTask */ = {
+		786F12351B70E3EF00386135 /* FirstProjectYalantis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 786F12591B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstTask" */;
+			buildConfigurationList = 786F12591B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstProjectYalantis" */;
 			buildPhases = (
 				786F12321B70E3EF00386135 /* Sources */,
 				786F12331B70E3EF00386135 /* Frameworks */,
@@ -167,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = FirstTask;
+			name = FirstProjectYalantis;
 			productName = FirstTask;
-			productReference = 786F12361B70E3EF00386135 /* FirstTask.app */;
+			productReference = 786F12361B70E3EF00386135 /* FirstProjectYalantis.app */;
 			productType = "com.apple.product-type.application";
 		};
-		786F124E1B70E3EF00386135 /* FirstTaskTests */ = {
+		786F124E1B70E3EF00386135 /* FirstProjectYalantisTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 786F125C1B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstTaskTests" */;
+			buildConfigurationList = 786F125C1B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstProjectYalantisTests" */;
 			buildPhases = (
 				786F124B1B70E3EF00386135 /* Sources */,
 				786F124C1B70E3EF00386135 /* Frameworks */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				786F12511B70E3EF00386135 /* PBXTargetDependency */,
 			);
-			name = FirstTaskTests;
+			name = FirstProjectYalantisTests;
 			productName = FirstTaskTests;
-			productReference = 786F124F1B70E3EF00386135 /* FirstTaskTests.xctest */;
+			productReference = 786F124F1B70E3EF00386135 /* FirstProjectYalantis.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 		786F122E1B70E3EF00386135 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Olga Khomich";
 				TargetAttributes = {
 					786F12351B70E3EF00386135 = {
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 786F12311B70E3EF00386135 /* Build configuration list for PBXProject "FirstTask" */;
+			buildConfigurationList = 786F12311B70E3EF00386135 /* Build configuration list for PBXProject "FirstProjectYalantis" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,8 +221,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				786F12351B70E3EF00386135 /* FirstTask */,
-				786F124E1B70E3EF00386135 /* FirstTaskTests */,
+				786F12351B70E3EF00386135 /* FirstProjectYalantis */,
+				786F124E1B70E3EF00386135 /* FirstProjectYalantisTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,9 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				786F123F1B70E3EF00386135 /* AppDelegate.m in Sources */,
+				78F09D131B7BAC83003BE73B /* FPYAppDelegate.m in Sources */,
 				786F123C1B70E3EF00386135 /* main.m in Sources */,
-				78D168191B71300900CEFF30 /* TableViewController.m in Sources */,
+				78F09D141B7BAC83003BE73B /* FPYTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +282,7 @@
 /* Begin PBXTargetDependency section */
 		786F12511B70E3EF00386135 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 786F12351B70E3EF00386135 /* FirstTask */;
+			target = 786F12351B70E3EF00386135 /* FirstProjectYalantis */;
 			targetProxy = 786F12501B70E3EF00386135 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -328,6 +328,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -393,7 +394,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FirstTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = FirstProjectYalantis;
 			};
 			name = Debug;
 		};
@@ -403,7 +405,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FirstTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = FirstProjectYalantis;
 			};
 			name = Release;
 		};
@@ -421,8 +424,9 @@
 				);
 				INFOPLIST_FILE = FirstTaskTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstTask.app/FirstTask";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = FirstProjectYalantis;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstProjectYalantis.app/FirstProjectYalantis";
 			};
 			name = Debug;
 		};
@@ -436,15 +440,16 @@
 				);
 				INFOPLIST_FILE = FirstTaskTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstTask.app/FirstTask";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = FirstProjectYalantis;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstProjectYalantis.app/FirstProjectYalantis";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		786F12311B70E3EF00386135 /* Build configuration list for PBXProject "FirstTask" */ = {
+		786F12311B70E3EF00386135 /* Build configuration list for PBXProject "FirstProjectYalantis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				786F12571B70E3EF00386135 /* Debug */,
@@ -453,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		786F12591B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstTask" */ = {
+		786F12591B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstProjectYalantis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				786F125A1B70E3EF00386135 /* Debug */,
@@ -462,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		786F125C1B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstTaskTests" */ = {
+		786F125C1B70E3EF00386135 /* Build configuration list for PBXNativeTarget "FirstProjectYalantisTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				786F125D1B70E3EF00386135 /* Debug */,

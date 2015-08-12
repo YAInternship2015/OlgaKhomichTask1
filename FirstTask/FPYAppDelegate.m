@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Olga Khomich. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "FPYAppDelegate.h"
 
-@interface AppDelegate ()
+@interface FPYAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation FPYAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
