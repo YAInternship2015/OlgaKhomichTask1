@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		786C214B1B7BC65C00C4AFD3 /* FPYDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */; };
+		786C214E1B7BD8A800C4AFD3 /* FPYContentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */; };
+		786C21511B7BE16A00C4AFD3 /* FPYNamedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */; };
 		786F123C1B70E3EF00386135 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 786F123B1B70E3EF00386135 /* main.m */; };
 		786F12451B70E3EF00386135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F12431B70E3EF00386135 /* Main.storyboard */; };
 		786F12471B70E3EF00386135 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786F12461B70E3EF00386135 /* Images.xcassets */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		786C21491B7BC65C00C4AFD3 /* FPYDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYDataSource.h; sourceTree = "<group>"; };
+		786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYDataSource.m; sourceTree = "<group>"; };
+		786C214C1B7BD8A800C4AFD3 /* FPYContentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYContentTableCell.h; sourceTree = "<group>"; };
+		786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYContentTableCell.m; sourceTree = "<group>"; };
+		786C214F1B7BE16A00C4AFD3 /* FPYNamedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYNamedImage.h; sourceTree = "<group>"; };
+		786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYNamedImage.m; sourceTree = "<group>"; };
 		786F12361B70E3EF00386135 /* FirstProjectYalantis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProjectYalantis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F123A1B70E3EF00386135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786F123B1B70E3EF00386135 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +112,12 @@
 		786F12381B70E3EF00386135 /* FirstTask */ = {
 			isa = PBXGroup;
 			children = (
+				786C214F1B7BE16A00C4AFD3 /* FPYNamedImage.h */,
+				786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */,
+				786C21491B7BC65C00C4AFD3 /* FPYDataSource.h */,
+				786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */,
+				786C214C1B7BD8A800C4AFD3 /* FPYContentTableCell.h */,
+				786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */,
 				78F09D0F1B7BAC83003BE73B /* FPYAppDelegate.h */,
 				78F09D101B7BAC83003BE73B /* FPYAppDelegate.m */,
 				78F09D111B7BAC83003BE73B /* FPYTableViewController.h */,
@@ -196,6 +211,7 @@
 		786F122E1B70E3EF00386135 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FPY;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Olga Khomich";
 				TargetAttributes = {
@@ -263,7 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786C214B1B7BC65C00C4AFD3 /* FPYDataSource.m in Sources */,
+				786C214E1B7BD8A800C4AFD3 /* FPYContentTableCell.m in Sources */,
 				78F09D131B7BAC83003BE73B /* FPYAppDelegate.m in Sources */,
+				786C21511B7BE16A00C4AFD3 /* FPYNamedImage.m in Sources */,
 				786F123C1B70E3EF00386135 /* main.m in Sources */,
 				78F09D141B7BAC83003BE73B /* FPYTableViewController.m in Sources */,
 			);

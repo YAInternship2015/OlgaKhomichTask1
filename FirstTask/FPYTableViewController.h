@@ -6,7 +6,4 @@
 
 @interface FPYTableViewController : UITableViewController
 
-@property NSArray *images;
-@property NSArray *titleOfImages;
-
 @end
