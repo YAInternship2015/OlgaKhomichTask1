@@ -10,6 +10,7 @@
 
 @interface FPYDataSource : NSObject
 
+#warning метод init не нужно показывать в *.h файле, он и так доступен
 -(instancetype)init;
 -(FPYNamedImage *)getNamedImageAtIndex:(NSUInteger)row;
 -(NSInteger)getItemsCount;

@@ -10,6 +10,7 @@
 
 -(instancetype)initWithImageName:(NSString *)imageName andTitle:(NSString *)title{
     self = [self init];
+#warning где проверка if (self) ?
     self->title1 = title;
     self->imageName1 = imageName;
     return self;
