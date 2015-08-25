@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78334F0F1B8C7638007AF5D9 /* bird.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F041B8C7638007AF5D9 /* bird.jpeg */; };
+		78334F101B8C7638007AF5D9 /* death.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F051B8C7638007AF5D9 /* death.jpg */; };
+		78334F111B8C7638007AF5D9 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F061B8C7638007AF5D9 /* dog.jpg */; };
+		78334F121B8C7638007AF5D9 /* duck.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F071B8C7638007AF5D9 /* duck.jpeg */; };
+		78334F131B8C7638007AF5D9 /* girl.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F081B8C7638007AF5D9 /* girl.jpeg */; };
+		78334F141B8C7638007AF5D9 /* hart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F091B8C7638007AF5D9 /* hart.jpeg */; };
+		78334F151B8C7638007AF5D9 /* kids.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F0A1B8C7638007AF5D9 /* kids.jpeg */; };
+		78334F161B8C7638007AF5D9 /* parrot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F0B1B8C7638007AF5D9 /* parrot.jpeg */; };
+		78334F171B8C7638007AF5D9 /* puppy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F0C1B8C7638007AF5D9 /* puppy.jpeg */; };
+		78334F181B8C7638007AF5D9 /* squirrel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F0D1B8C7638007AF5D9 /* squirrel.jpeg */; };
+		78334F191B8C7638007AF5D9 /* swan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78334F0E1B8C7638007AF5D9 /* swan.jpeg */; };
 		786C214B1B7BC65C00C4AFD3 /* FPYDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */; };
 		786C214E1B7BD8A800C4AFD3 /* FPYContentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */; };
 		786C21511B7BE16A00C4AFD3 /* FPYNamedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */; };
@@ -15,19 +26,8 @@
 		786F12471B70E3EF00386135 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786F12461B70E3EF00386135 /* Images.xcassets */; };
 		786F124A1B70E3EF00386135 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786F12481B70E3EF00386135 /* LaunchScreen.xib */; };
 		786F12561B70E3EF00386135 /* FirstTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 786F12551B70E3EF00386135 /* FirstTaskTests.m */; };
-		78E693011B737D0C00D38880 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693001B737D0C00D38880 /* dog.jpg */; };
-		78E693031B73881200D38880 /* girl.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693021B73881200D38880 /* girl.jpeg */; };
-		78E693051B73893200D38880 /* squirrel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693041B73893200D38880 /* squirrel.jpeg */; };
-		78E693071B7389D400D38880 /* hart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693061B7389D400D38880 /* hart.jpeg */; };
-		78E693091B738D3300D38880 /* swan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693081B738D3300D38880 /* swan.jpeg */; };
-		78E6930B1B738D4100D38880 /* parrot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E6930A1B738D4100D38880 /* parrot.jpeg */; };
-		78E6930D1B738E0200D38880 /* kids.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E6930C1B738E0200D38880 /* kids.jpeg */; };
-		78E6930F1B738EA400D38880 /* bird.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E6930E1B738EA400D38880 /* bird.jpeg */; };
-		78E693111B738EBA00D38880 /* death.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693101B738EBA00D38880 /* death.jpg */; };
-		78E693131B738EE600D38880 /* duck.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693121B738EE600D38880 /* duck.jpeg */; };
-		78E693151B738F0F00D38880 /* puppy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78E693141B738F0F00D38880 /* puppy.jpeg */; };
 		78F09D131B7BAC83003BE73B /* FPYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F09D101B7BAC83003BE73B /* FPYAppDelegate.m */; };
-		78F09D141B7BAC83003BE73B /* FPYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F09D121B7BAC83003BE73B /* FPYTableViewController.m */; };
+		78F9FA6B1B864E6B007E1E73 /* FPYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F9FA6A1B864E6B007E1E73 /* FPYTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +41,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		786C21491B7BC65C00C4AFD3 /* FPYDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYDataSource.h; sourceTree = "<group>"; };
-		786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYDataSource.m; sourceTree = "<group>"; };
-		786C214C1B7BD8A800C4AFD3 /* FPYContentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYContentTableCell.h; sourceTree = "<group>"; };
-		786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYContentTableCell.m; sourceTree = "<group>"; };
-		786C214F1B7BE16A00C4AFD3 /* FPYNamedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYNamedImage.h; sourceTree = "<group>"; };
-		786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYNamedImage.m; sourceTree = "<group>"; };
+		78334F041B8C7638007AF5D9 /* bird.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpeg; sourceTree = "<group>"; };
+		78334F051B8C7638007AF5D9 /* death.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = death.jpg; sourceTree = "<group>"; };
+		78334F061B8C7638007AF5D9 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		78334F071B8C7638007AF5D9 /* duck.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck.jpeg; sourceTree = "<group>"; };
+		78334F081B8C7638007AF5D9 /* girl.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpeg; sourceTree = "<group>"; };
+		78334F091B8C7638007AF5D9 /* hart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hart.jpeg; sourceTree = "<group>"; };
+		78334F0A1B8C7638007AF5D9 /* kids.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kids.jpeg; sourceTree = "<group>"; };
+		78334F0B1B8C7638007AF5D9 /* parrot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parrot.jpeg; sourceTree = "<group>"; };
+		78334F0C1B8C7638007AF5D9 /* puppy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpeg; sourceTree = "<group>"; };
+		78334F0D1B8C7638007AF5D9 /* squirrel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = squirrel.jpeg; sourceTree = "<group>"; };
+		78334F0E1B8C7638007AF5D9 /* swan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swan.jpeg; sourceTree = "<group>"; };
+		786C21491B7BC65C00C4AFD3 /* FPYDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPYDataSource.h; path = ../FPYDataSource.h; sourceTree = "<group>"; };
+		786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPYDataSource.m; path = ../FPYDataSource.m; sourceTree = "<group>"; };
+		786C214C1B7BD8A800C4AFD3 /* FPYContentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPYContentTableCell.h; path = ../FPYContentTableCell.h; sourceTree = "<group>"; };
+		786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPYContentTableCell.m; path = ../FPYContentTableCell.m; sourceTree = "<group>"; };
+		786C214F1B7BE16A00C4AFD3 /* FPYNamedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPYNamedImage.h; path = ../FPYNamedImage.h; sourceTree = "<group>"; };
+		786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPYNamedImage.m; path = ../FPYNamedImage.m; sourceTree = "<group>"; };
 		786F12361B70E3EF00386135 /* FirstProjectYalantis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProjectYalantis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F123A1B70E3EF00386135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786F123B1B70E3EF00386135 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,21 +67,10 @@
 		786F124F1B70E3EF00386135 /* FirstProjectYalantis.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstProjectYalantis.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F12541B70E3EF00386135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786F12551B70E3EF00386135 /* FirstTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTaskTests.m; sourceTree = "<group>"; };
-		78E693001B737D0C00D38880 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
-		78E693021B73881200D38880 /* girl.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpeg; sourceTree = "<group>"; };
-		78E693041B73893200D38880 /* squirrel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = squirrel.jpeg; sourceTree = "<group>"; };
-		78E693061B7389D400D38880 /* hart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hart.jpeg; sourceTree = "<group>"; };
-		78E693081B738D3300D38880 /* swan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swan.jpeg; sourceTree = "<group>"; };
-		78E6930A1B738D4100D38880 /* parrot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parrot.jpeg; sourceTree = "<group>"; };
-		78E6930C1B738E0200D38880 /* kids.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kids.jpeg; sourceTree = "<group>"; };
-		78E6930E1B738EA400D38880 /* bird.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpeg; sourceTree = "<group>"; };
-		78E693101B738EBA00D38880 /* death.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = death.jpg; sourceTree = "<group>"; };
-		78E693121B738EE600D38880 /* duck.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck.jpeg; sourceTree = "<group>"; };
-		78E693141B738F0F00D38880 /* puppy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpeg; sourceTree = "<group>"; };
 		78F09D0F1B7BAC83003BE73B /* FPYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYAppDelegate.h; sourceTree = "<group>"; };
 		78F09D101B7BAC83003BE73B /* FPYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYAppDelegate.m; sourceTree = "<group>"; };
-		78F09D111B7BAC83003BE73B /* FPYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYTableViewController.h; sourceTree = "<group>"; };
-		78F09D121B7BAC83003BE73B /* FPYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYTableViewController.m; sourceTree = "<group>"; };
+		78F9FA691B864E6B007E1E73 /* FPYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYTableViewController.h; sourceTree = "<group>"; };
+		78F9FA6A1B864E6B007E1E73 /* FPYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,30 +112,14 @@
 		786F12381B70E3EF00386135 /* FirstTask */ = {
 			isa = PBXGroup;
 			children = (
-				786C214F1B7BE16A00C4AFD3 /* FPYNamedImage.h */,
-				786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */,
-				786C21491B7BC65C00C4AFD3 /* FPYDataSource.h */,
-				786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */,
-				786C214C1B7BD8A800C4AFD3 /* FPYContentTableCell.h */,
-				786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */,
+				78E26EA91B8492190003C977 /* Resources */,
+				78E26EA71B8490740003C977 /* Controllers */,
+				78E26EA81B84918F0003C977 /* Models */,
 				78F09D0F1B7BAC83003BE73B /* FPYAppDelegate.h */,
 				78F09D101B7BAC83003BE73B /* FPYAppDelegate.m */,
-				78F09D111B7BAC83003BE73B /* FPYTableViewController.h */,
-				78F09D121B7BAC83003BE73B /* FPYTableViewController.m */,
 				786F12431B70E3EF00386135 /* Main.storyboard */,
 				786F12461B70E3EF00386135 /* Images.xcassets */,
 				786F12481B70E3EF00386135 /* LaunchScreen.xib */,
-				78E693001B737D0C00D38880 /* dog.jpg */,
-				78E693021B73881200D38880 /* girl.jpeg */,
-				78E693041B73893200D38880 /* squirrel.jpeg */,
-				78E693061B7389D400D38880 /* hart.jpeg */,
-				78E693081B738D3300D38880 /* swan.jpeg */,
-				78E6930A1B738D4100D38880 /* parrot.jpeg */,
-				78E6930C1B738E0200D38880 /* kids.jpeg */,
-				78E6930E1B738EA400D38880 /* bird.jpeg */,
-				78E693101B738EBA00D38880 /* death.jpg */,
-				78E693121B738EE600D38880 /* duck.jpeg */,
-				78E693141B738F0F00D38880 /* puppy.jpeg */,
 				786F12391B70E3EF00386135 /* Supporting Files */,
 			);
 			path = FirstTask;
@@ -165,6 +149,47 @@
 				786F12541B70E3EF00386135 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78E26EA71B8490740003C977 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78F9FA691B864E6B007E1E73 /* FPYTableViewController.h */,
+				78F9FA6A1B864E6B007E1E73 /* FPYTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		78E26EA81B84918F0003C977 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				786C214F1B7BE16A00C4AFD3 /* FPYNamedImage.h */,
+				786C21501B7BE16A00C4AFD3 /* FPYNamedImage.m */,
+				786C21491B7BC65C00C4AFD3 /* FPYDataSource.h */,
+				786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */,
+				786C214C1B7BD8A800C4AFD3 /* FPYContentTableCell.h */,
+				786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */,
+			);
+			name = Models;
+			path = FirstTask/Models;
+			sourceTree = SOURCE_ROOT;
+		};
+		78E26EA91B8492190003C977 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78334F041B8C7638007AF5D9 /* bird.jpeg */,
+				78334F051B8C7638007AF5D9 /* death.jpg */,
+				78334F061B8C7638007AF5D9 /* dog.jpg */,
+				78334F071B8C7638007AF5D9 /* duck.jpeg */,
+				78334F081B8C7638007AF5D9 /* girl.jpeg */,
+				78334F091B8C7638007AF5D9 /* hart.jpeg */,
+				78334F0A1B8C7638007AF5D9 /* kids.jpeg */,
+				78334F0B1B8C7638007AF5D9 /* parrot.jpeg */,
+				78334F0C1B8C7638007AF5D9 /* puppy.jpeg */,
+				78334F0D1B8C7638007AF5D9 /* squirrel.jpeg */,
+				78334F0E1B8C7638007AF5D9 /* swan.jpeg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,20 +273,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E693071B7389D400D38880 /* hart.jpeg in Resources */,
-				78E693011B737D0C00D38880 /* dog.jpg in Resources */,
+				78334F191B8C7638007AF5D9 /* swan.jpeg in Resources */,
+				78334F111B8C7638007AF5D9 /* dog.jpg in Resources */,
+				78334F121B8C7638007AF5D9 /* duck.jpeg in Resources */,
 				786F12451B70E3EF00386135 /* Main.storyboard in Resources */,
-				78E693031B73881200D38880 /* girl.jpeg in Resources */,
-				78E6930D1B738E0200D38880 /* kids.jpeg in Resources */,
+				78334F161B8C7638007AF5D9 /* parrot.jpeg in Resources */,
+				78334F131B8C7638007AF5D9 /* girl.jpeg in Resources */,
+				78334F181B8C7638007AF5D9 /* squirrel.jpeg in Resources */,
+				78334F151B8C7638007AF5D9 /* kids.jpeg in Resources */,
 				786F124A1B70E3EF00386135 /* LaunchScreen.xib in Resources */,
-				78E6930F1B738EA400D38880 /* bird.jpeg in Resources */,
-				78E693131B738EE600D38880 /* duck.jpeg in Resources */,
-				78E693051B73893200D38880 /* squirrel.jpeg in Resources */,
-				78E693091B738D3300D38880 /* swan.jpeg in Resources */,
-				78E693151B738F0F00D38880 /* puppy.jpeg in Resources */,
+				78334F0F1B8C7638007AF5D9 /* bird.jpeg in Resources */,
+				78334F171B8C7638007AF5D9 /* puppy.jpeg in Resources */,
 				786F12471B70E3EF00386135 /* Images.xcassets in Resources */,
-				78E693111B738EBA00D38880 /* death.jpg in Resources */,
-				78E6930B1B738D4100D38880 /* parrot.jpeg in Resources */,
+				78334F101B8C7638007AF5D9 /* death.jpg in Resources */,
+				78334F141B8C7638007AF5D9 /* hart.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +309,7 @@
 				78F09D131B7BAC83003BE73B /* FPYAppDelegate.m in Sources */,
 				786C21511B7BE16A00C4AFD3 /* FPYNamedImage.m in Sources */,
 				786F123C1B70E3EF00386135 /* main.m in Sources */,
-				78F09D141B7BAC83003BE73B /* FPYTableViewController.m in Sources */,
+				78F9FA6B1B864E6B007E1E73 /* FPYTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,38 +6,38 @@
 
 #import "FPYDataSource.h"
 
-@implementation FPYDataSource{
+@implementation FPYDataSource {
     NSArray *namedImagesAndTitles;
 }
 
--(instancetype)init{
+-(instancetype)init {
     
     self = [super init];
-    if (self)
-    {
+    if (self) {
              namedImagesAndTitles = [NSArray arrayWithObjects:
-                                [[FPYNamedImage alloc] initWithImageName:@"dog.jpg" andTitle:@"Dog"],
-                                [[FPYNamedImage alloc] initWithImageName:@"girl.jpeg" andTitle:@"Girl"],
-                                [[FPYNamedImage alloc] initWithImageName:@"squirrel.jpeg" andTitle:@"Squirrel"],
-                                [[FPYNamedImage alloc] initWithImageName:@"hart.jpeg" andTitle:@"Hart"],
-                                [[FPYNamedImage alloc] initWithImageName:@"swan.jpeg" andTitle:@"Swan"],
-                                [[FPYNamedImage alloc] initWithImageName:@"parrot.jpeg" andTitle:@"Parrot"],
-                                [[FPYNamedImage alloc] initWithImageName:@"kids.jpeg" andTitle:@"Kids"],
-                                [[FPYNamedImage alloc] initWithImageName:@"bird.jpeg" andTitle:@"Bird"],
-                                [[FPYNamedImage alloc] initWithImageName:@"death.jpg" andTitle:@"Death"],
-                                [[FPYNamedImage alloc] initWithImageName:@"duck.jpeg" andTitle:@"Duck"],
-                                [[FPYNamedImage alloc] initWithImageName:@"puppy.jpeg" andTitle:@"Puppy"],
+                                [[FPYNamedImage alloc] initWithImageName:@"dog.jpg"         title:@"Dog"],
+                                [[FPYNamedImage alloc] initWithImageName:@"girl.jpeg"       title:@"Girl"],
+                                [[FPYNamedImage alloc] initWithImageName:@"squirrel.jpeg"   title:@"Squirrel"],
+                                [[FPYNamedImage alloc] initWithImageName:@"hart.jpeg"       title:@"Hart"],
+                                [[FPYNamedImage alloc] initWithImageName:@"swan.jpeg"       title:@"Swan"],
+                                [[FPYNamedImage alloc] initWithImageName:@"parrot.jpeg"     title:@"Parrot"],
+                                [[FPYNamedImage alloc] initWithImageName:@"kids.jpeg"       title:@"Kids"],
+                                [[FPYNamedImage alloc] initWithImageName:@"bird.jpeg"       title:@"Bird"],
+                                [[FPYNamedImage alloc] initWithImageName:@"death.jpg"       title:@"Death"],
+                                [[FPYNamedImage alloc] initWithImageName:@"duck.jpeg"       title:@"Duck"],
+                                [[FPYNamedImage alloc] initWithImageName:@"puppy.jpeg"      title:@"Puppy"],
                                  nil];
     }
     return self;
 }
 
--(FPYNamedImage *)getNamedImageAtIndex:(NSUInteger)row{
+-(FPYNamedImage *)getNamedImageAtIndex:(NSUInteger)row {
     FPYNamedImage *temp = [namedImagesAndTitles objectAtIndex:row];
+    
     return temp;
 }
 
--(NSInteger)getItemsCount{
+-(NSInteger)getItemsCount {
     
     return [namedImagesAndTitles count];
 }

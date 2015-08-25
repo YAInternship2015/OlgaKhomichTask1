@@ -14,4 +14,5 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imageOnTheCell;
 
 -(void)fillWithNamedImage:(FPYNamedImage *)namedImage;
+
 @end

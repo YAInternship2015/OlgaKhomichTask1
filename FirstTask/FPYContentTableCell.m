@@ -9,18 +9,9 @@
 
 @implementation FPYContentTableCell
 
-- (void)awakeFromNib {
-    // Initialization code
+-(void)fillWithNamedImage:(FPYNamedImage *)namedImage {
+    self.titleOnTheCell.text = namedImage.title;
+    self.imageOnTheCell.image = namedImage.image;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
--(void)fillWithNamedImage:(FPYNamedImage *)namedImage{
-    self.titleOnTheCell.text = [namedImage getTitle];
-    self.imageOnTheCell.image = [namedImage getImage];
-}
 @end

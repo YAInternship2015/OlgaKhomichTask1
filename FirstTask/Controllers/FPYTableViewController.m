@@ -12,19 +12,14 @@
 
 @end
 
-@implementation FPYTableViewController{
+@implementation FPYTableViewController {
     FPYDataSource *contentData;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     contentData = [[FPYDataSource alloc] init];
-   }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.tableView reloadData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -37,15 +32,15 @@
     return [contentData getItemsCount];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
-    
+    //(id)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath
     FPYContentTableCell *cell = (FPYContentTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[FPYContentTableCell alloc] initWithStyle:UITableViewCellStyleDefault
                                           reuseIdentifier:CellIdentifier];
     }
+    
     
     FPYNamedImage *namedImage = [contentData getNamedImageAtIndex:indexPath.row];
     [cell fillWithNamedImage:namedImage];

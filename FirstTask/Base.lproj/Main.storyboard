@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CZW-HZ-h91">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CZW-HZ-h91">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8173.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -30,8 +30,8 @@
                                                 <constraint firstAttribute="height" constant="80" id="RaL-UU-AFt"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-jQ-5TE">
-                                            <rect key="frame" x="108" y="23" width="484" height="34"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-jQ-5TE">
+                                            <rect key="frame" x="108" y="22" width="484" height="36"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="34" id="PMT-P0-sRR"/>
@@ -52,8 +52,8 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="imageOnTheCell" destination="Kj7-fO-v7E" id="YfF-hN-yci"/>
-                                    <outlet property="titleOnTheCell" destination="5tm-jQ-5TE" id="QiJ-tY-zTr"/>
+                                    <outlet property="imageOnTheCell" destination="Kj7-fO-v7E" id="jbg-4y-nbd"/>
+                                    <outlet property="titleOnTheCell" destination="5tm-jQ-5TE" id="9Pg-PX-fZV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
