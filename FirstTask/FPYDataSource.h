@@ -10,7 +10,7 @@
 
 @interface FPYDataSource : NSObject
 
--(FPYNamedImage *)getNamedImageAtIndex:(NSUInteger)row;
--(NSInteger)getItemsCount;
+-(FPYNamedImage *)namedImageAtIndex:(NSUInteger)row;
+-(NSInteger)count;
 
 @end

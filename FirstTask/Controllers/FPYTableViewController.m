@@ -12,13 +12,11 @@
 
 @end
 
-@implementation FPYTableViewController {
-    FPYDataSource *contentData;
-}
+@implementation FPYTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    contentData = [[FPYDataSource alloc] init];
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     [self.tableView reloadData];
 }
 
@@ -29,7 +27,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [contentData getItemsCount];
+    return [self.contentData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -42,7 +40,7 @@
     }
     
     
-    FPYNamedImage *namedImage = [contentData getNamedImageAtIndex:indexPath.row];
+    FPYNamedImage *namedImage = [self.contentData namedImageAtIndex:indexPath.row];
     [cell fillWithNamedImage:namedImage];
     
     return cell;

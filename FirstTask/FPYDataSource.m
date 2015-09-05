@@ -31,13 +31,13 @@
     return self;
 }
 
--(FPYNamedImage *)getNamedImageAtIndex:(NSUInteger)row {
+-(FPYNamedImage *)namedImageAtIndex:(NSUInteger)row {
     FPYNamedImage *temp = [namedImagesAndTitles objectAtIndex:row];
     
     return temp;
 }
 
--(NSInteger)getItemsCount {
+-(NSInteger)count {
     
     return [namedImagesAndTitles count];
 }

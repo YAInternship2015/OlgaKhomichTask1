@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CZW-HZ-h91">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OTa-Lh-CQb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="TuL-Jb-IxY">
+            <objects>
+                <viewController id="QLi-96-Vau" customClass="FPYViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbw-4l-zp6"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Q3-Rr-2s7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NUO-6C-y5J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09s-u2-1WM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="WQz-uI-2Sj" kind="embed" identifier="embedContainer" id="GgL-WQ-NPb"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="09s-u2-1WM" firstAttribute="leading" secondItem="NUO-6C-y5J" secondAttribute="leading" id="6r1-w1-Y2l"/>
+                            <constraint firstItem="09s-u2-1WM" firstAttribute="leading" secondItem="NUO-6C-y5J" secondAttribute="leading" id="8Q0-fx-2dh"/>
+                            <constraint firstAttribute="trailing" secondItem="09s-u2-1WM" secondAttribute="trailing" id="GDg-Ds-RWT"/>
+                            <constraint firstItem="09s-u2-1WM" firstAttribute="centerY" secondItem="NUO-6C-y5J" secondAttribute="centerY" id="GJN-6G-dlN"/>
+                            <constraint firstItem="9Q3-Rr-2s7" firstAttribute="top" secondItem="09s-u2-1WM" secondAttribute="bottom" id="U9c-9m-nWi"/>
+                            <constraint firstItem="09s-u2-1WM" firstAttribute="bottom" secondItem="9Q3-Rr-2s7" secondAttribute="top" id="UQ3-iG-fLT"/>
+                            <constraint firstItem="09s-u2-1WM" firstAttribute="centerX" secondItem="NUO-6C-y5J" secondAttribute="centerX" id="e0c-n3-4e2"/>
+                            <constraint firstItem="09s-u2-1WM" firstAttribute="top" secondItem="NUO-6C-y5J" secondAttribute="top" id="lap-c1-h4C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ykP-7q-60i">
+                        <barButtonItem key="leftBarButtonItem" title="Change view type" id="xFT-45-ydF">
+                            <connections>
+                                <action selector="swapButtonPressed:" destination="QLi-96-Vau" id="n0o-UA-AEW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="iY3-rr-yKD"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfH-Ni-8Pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-417"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1AU-cn-hgT">
+            <objects>
+                <navigationController id="OTa-Lh-CQb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5tn-36-XIr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QLi-96-Vau" kind="relationship" relationship="rootViewController" id="2zn-Ef-Tnd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAl-Rq-1wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-1131"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="ogZ-at-kCX">
             <objects>
@@ -14,14 +77,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <containerView key="tableFooterView" opaque="NO" contentMode="scaleToFill" id="DPs-rp-Eep">
-                            <rect key="frame" x="0.0" y="102" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            <animations/>
-                            <connections>
-                                <segue destination="tF9-OQ-ii7" kind="embed" id="bp3-PD-1Ke"/>
-                            </connections>
-                        </containerView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="VMY-s0-2zG" customClass="FPYContentTableCell">
                                 <rect key="frame" x="0.0" y="22" width="600" height="80"/>
@@ -38,8 +93,8 @@
                                                 <constraint firstAttribute="height" constant="80" id="RaL-UU-AFt"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-jQ-5TE">
-                                            <rect key="frame" x="108" y="22" width="484" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-jQ-5TE">
+                                            <rect key="frame" x="108" y="23" width="484" height="34"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="34" id="PMT-P0-sRR"/>
@@ -76,21 +131,90 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ju3-on-IPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="292"/>
+            <point key="canvasLocation" x="735" y="90"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="OQt-oM-zzf">
+        <!--Collection View Controller-->
+        <scene sceneID="LqU-z8-fmG">
             <objects>
-                <viewController id="tF9-OQ-ii7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5iQ-kf-dlz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                <collectionViewController id="8Ui-Sb-uxB" customClass="FPYCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="CAQ-Nt-v2S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TlM-jd-KDn">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Rr3-6K-nug" customClass="FPYCollectionViewCell">
+                                <rect key="frame" x="20" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE2-dD-UDd">
+                                            <rect key="frame" x="29" y="40" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RSl-Dn-EEC">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="EE2-dD-UDd" firstAttribute="centerX" secondItem="Rr3-6K-nug" secondAttribute="centerX" id="TuA-cI-GiU"/>
+                                    <constraint firstItem="EE2-dD-UDd" firstAttribute="centerY" secondItem="Rr3-6K-nug" secondAttribute="centerY" id="pZ8-Uy-V2M"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageCollectionCell" destination="RSl-Dn-EEC" id="Zxo-xh-ffA"/>
+                                    <outlet property="titleCollectionCell" destination="EE2-dD-UDd" id="chq-ER-CiH"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="8Ui-Sb-uxB" id="bDk-1H-hPg"/>
+                            <outlet property="delegate" destination="8Ui-Sb-uxB" id="4OB-pb-cAl"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oro-TC-gE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="516"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="cz0-HG-Ugl">
+            <objects>
+                <viewController id="WQz-uI-2Sj" customClass="FPYContainerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JyM-Og-eW7"/>
+                        <viewControllerLayoutGuide type="bottom" id="SGJ-R3-skP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J7N-aP-Udv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="CZW-HZ-h91" kind="custom" identifier="embedFirst" customClass="FPYEmptySegue" id="snF-4V-GCC"/>
+                        <segue destination="8Ui-Sb-uxB" kind="custom" identifier="embedSecond" customClass="FPYEmptySegue" id="Y2k-8r-uKl"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hgb-nY-q9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2t-UJ-uuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6" y="426"/>
         </scene>
     </scenes>
 </document>
