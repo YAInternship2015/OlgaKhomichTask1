@@ -8,6 +8,7 @@
 
 #import "FPYAddToDataSource.h"
 #import "FPYDataSource.h"
+#import "FPYNamedImageDataValidator.h"
 
 @interface FPYAddToDataSource ()
 
@@ -40,10 +41,11 @@
 */
 
 - (IBAction)addData:(id)sender {
-    BOOL isTitleCorrect = (self.titleForAdd.text != nil) && (self.titleForAdd.text.length >= 3);
-    BOOL isImageFileNameCorrect = (self.imageForAdd.text != nil) && (self.imageForAdd.text.length > 0);
     
-    if (isTitleCorrect && isImageFileNameCorrect) {
+    BOOL isTitleValid = [FPYNamedImageDataValidator isValidImageTitle:self.titleForAdd.text];
+    BOOL isImageValid = [FPYNamedImageDataValidator isValidImageName:self.imageForAdd.text];
+    
+    if (isTitleValid && isImageValid) {
         FPYNamedImage *newObject = [[FPYNamedImage alloc] initWithImageName:self.imageForAdd.text title:self.titleForAdd.text];
         [self.contentData addNewItem:newObject];
         
@@ -54,7 +56,7 @@
     }else{
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Error"
-                                     message:@"Please type image title and fileName"
+                                     message:@"Please check image title and fileName"
                                      preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction* ok = [UIAlertAction
