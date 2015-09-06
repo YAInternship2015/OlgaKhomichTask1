@@ -29,6 +29,7 @@
 		78F9FA6B1B864E6B007E1E73 /* FPYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F9FA6A1B864E6B007E1E73 /* FPYTableViewController.m */; };
 		78FA9E631B9AE7E100531919 /* FPYEmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FA9E621B9AE7E100531919 /* FPYEmptySegue.m */; };
 		78FA9E661B9AED4300531919 /* FPYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FA9E651B9AED4300531919 /* FPYCollectionViewCell.m */; };
+		78FA9E691B9B680400531919 /* FPYAddToDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FA9E681B9B680400531919 /* FPYAddToDataSource.m */; };
 		78FE76111B99B5CA007E4CCF /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78FE76101B99B5CA007E4CCF /* dog.jpg */; };
 		78FE76131B99B5D7007E4CCF /* default.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78FE76121B99B5D7007E4CCF /* default.jpeg */; };
 		78FE76151B99E1CE007E4CCF /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FE76141B99E1CE007E4CCF /* Data.plist */; };
@@ -81,6 +82,8 @@
 		78FA9E621B9AE7E100531919 /* FPYEmptySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYEmptySegue.m; sourceTree = "<group>"; };
 		78FA9E641B9AED4300531919 /* FPYCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYCollectionViewCell.h; sourceTree = "<group>"; };
 		78FA9E651B9AED4300531919 /* FPYCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYCollectionViewCell.m; sourceTree = "<group>"; };
+		78FA9E671B9B680400531919 /* FPYAddToDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYAddToDataSource.h; sourceTree = "<group>"; };
+		78FA9E681B9B680400531919 /* FPYAddToDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYAddToDataSource.m; sourceTree = "<group>"; };
 		78FE76101B99B5CA007E4CCF /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		78FE76121B99B5D7007E4CCF /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpeg; sourceTree = "<group>"; };
 		78FE76141B99E1CE007E4CCF /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				78FE761A1B99E4FE007E4CCF /* FPYCollectionViewController.m */,
 				78FE761C1B99E740007E4CCF /* FPYViewController.h */,
 				78FE761D1B99E740007E4CCF /* FPYViewController.m */,
+				78FA9E671B9B680400531919 /* FPYAddToDataSource.h */,
+				78FA9E681B9B680400531919 /* FPYAddToDataSource.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,9 +199,9 @@
 				786C214A1B7BC65C00C4AFD3 /* FPYDataSource.m */,
 				786C214C1B7BD8A800C4AFD3 /* FPYContentTableCell.h */,
 				786C214D1B7BD8A800C4AFD3 /* FPYContentTableCell.m */,
-				78FA9E611B9AE7E100531919 /* FPYEmptySegue.h */,
 				78FA9E641B9AED4300531919 /* FPYCollectionViewCell.h */,
 				78FA9E651B9AED4300531919 /* FPYCollectionViewCell.m */,
+				78FA9E611B9AE7E100531919 /* FPYEmptySegue.h */,
 				78FA9E621B9AE7E100531919 /* FPYEmptySegue.m */,
 			);
 			name = Models;
@@ -338,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				786C214B1B7BC65C00C4AFD3 /* FPYDataSource.m in Sources */,
+				78FA9E691B9B680400531919 /* FPYAddToDataSource.m in Sources */,
 				78FA9E661B9AED4300531919 /* FPYCollectionViewCell.m in Sources */,
 				78FA9E631B9AE7E100531919 /* FPYEmptySegue.m in Sources */,
 				78FE76181B99E41C007E4CCF /* FPYContainerViewController.m in Sources */,

@@ -14,5 +14,59 @@
 		<key>title</key>
 		<string>Bird</string>
 	</dict>
+	<dict>
+		<key>image</key>
+		<string>death.jpg</string>
+		<key>title</key>
+		<string>Death</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>duck.jpeg</string>
+		<key>title</key>
+		<string>Duck</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>girl.jpeg</string>
+		<key>title</key>
+		<string>Girl</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>hart.jpeg</string>
+		<key>title</key>
+		<string>Hart</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>kids.jpeg</string>
+		<key>title</key>
+		<string>Kids</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>parrot.jpeg</string>
+		<key>title</key>
+		<string>Parrot</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>puppy.jpeg</string>
+		<key>title</key>
+		<string>puppy</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>squirrel.jpeg</string>
+		<key>title</key>
+		<string>Squirrel.jpeg</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>swan.jpeg</string>
+		<key>title</key>
+		<string>Swan</string>
+	</dict>
 </array>
 </plist>

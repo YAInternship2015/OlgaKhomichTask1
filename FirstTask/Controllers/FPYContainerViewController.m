@@ -9,6 +9,7 @@
 #import "FPYContainerViewController.h"
 #import "FPYTableViewController.h"
 #import "FPYCollectionViewController.h"
+#import "FPYAddToDataSource.h"
 
 #define SegueIdentifierFirst @"embedFirst"
 #define SegueIdentifierSecond @"embedSecond"
@@ -23,12 +24,9 @@
 @end
 
 @implementation FPYContainerViewController
-{
-    FPYDataSource *dataSource;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self->dataSource = [FPYDataSource new];
     
     self.transitionInProgress = NO;
     self.currentSegueIdentifier = SegueIdentifierFirst;
@@ -43,14 +41,15 @@
     // Instead of creating new VCs on each seque we want to hang on to existing
     // instances if we have it. Remove the second condition of the following
     // two if statements to get new VC instances instead.
+    
     if ([segue.identifier isEqualToString:SegueIdentifierFirst]) {
         self.tableViewController = segue.destinationViewController;
-        self.tableViewController.contentData = self->dataSource;
+        self.tableViewController.contentData = self.dataSource;
     }
     
     if ([segue.identifier isEqualToString:SegueIdentifierSecond]) {
         self.collectionViewController = segue.destinationViewController;
-        self.collectionViewController.contentData = self->dataSource;
+        self.collectionViewController.contentData = self.dataSource;
     }
     
     // If we're going to the first view controller.

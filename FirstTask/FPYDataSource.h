@@ -11,6 +11,7 @@
 @interface FPYDataSource : NSObject
 
 -(FPYNamedImage *)namedImageAtIndex:(NSUInteger)row;
+-(void)addNewItem:(FPYNamedImage *)item;
 -(NSInteger)count;
 
 @end

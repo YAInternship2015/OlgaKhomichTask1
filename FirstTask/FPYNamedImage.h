@@ -9,9 +9,11 @@
 
 @interface FPYNamedImage : NSObject
 
-@property (nonatomic, readonly) NSString *title;
-@property (nonatomic, readonly) UIImage *image;
+@property (readonly) NSString *title;
+@property (readonly) UIImage *image;
 
 -(instancetype)initWithImageName:(NSString *)initialImageName title:(NSString *)initialTitle;
+-(instancetype)initWithDictionary:(NSDictionary *)dictionary;
+-(NSDictionary *)objectToDictionary;
 
 @end
