@@ -6,20 +6,47 @@
 
 #import "FPYNamedImage.h"
 
-@implementation FPYNamedImage
+@implementation FPYNamedImage {
+    NSString *_imageName;
+}
 
--(instancetype)initWithImageName:(NSString *)imageName andTitle:(NSString *)title{
+-(instancetype)initWithImageName:(NSString *)initialImageName title:(NSString *)initialTitle {
+    
     self = [self init];
-    self->title1 = title;
-    self->imageName1 = imageName;
+    
+    if (self != nil) {
+        self->_title = initialTitle;
+        self->_imageName = initialImageName;
+    }
+    
     return self;
 }
--(UIImage *)getImage{
-    return [UIImage imageNamed:imageName1];
+
+-(instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    
+    if (self) {
+        self->_title = dictionary[@"title"];
+        self->_imageName = dictionary[@"image"];
+    }
+    return self;
 }
 
--(NSString *)getTitle{
-    return title1;
+-(NSDictionary *)objectToDictionary{
+    return [NSDictionary dictionaryWithObjectsAndKeys:_imageName, @"image", self.title, @"title", nil];
+}
+
+
+-(UIImage *)image {
+    UIImage *result = [UIImage imageNamed:_imageName];
+    
+    if (result == nil)
+    {
+        result = [UIImage imageNamed:@"default.jpeg"];
+    }
+    
+    return result;
+
 }
 
 @end

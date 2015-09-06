@@ -6,40 +6,73 @@
 
 #import "FPYDataSource.h"
 
-@implementation FPYDataSource{
-    NSArray *namedImagesAndTitles;
-}
 
--(instancetype)init{
-    
+@interface FPYDataSource ()
+
+@property (nonatomic, strong) NSMutableArray *contentData;
+
+@end
+
+@implementation FPYDataSource
+
+-(instancetype)init {
     self = [super init];
-    if (self)
-    {
-             namedImagesAndTitles = [NSArray arrayWithObjects:
-                                [[FPYNamedImage alloc] initWithImageName:@"dog.jpg" andTitle:@"Dog"],
-                                [[FPYNamedImage alloc] initWithImageName:@"girl.jpeg" andTitle:@"Girl"],
-                                [[FPYNamedImage alloc] initWithImageName:@"squirrel.jpeg" andTitle:@"Squirrel"],
-                                [[FPYNamedImage alloc] initWithImageName:@"hart.jpeg" andTitle:@"Hart"],
-                                [[FPYNamedImage alloc] initWithImageName:@"swan.jpeg" andTitle:@"Swan"],
-                                [[FPYNamedImage alloc] initWithImageName:@"parrot.jpeg" andTitle:@"Parrot"],
-                                [[FPYNamedImage alloc] initWithImageName:@"kids.jpeg" andTitle:@"Kids"],
-                                [[FPYNamedImage alloc] initWithImageName:@"bird.jpeg" andTitle:@"Bird"],
-                                [[FPYNamedImage alloc] initWithImageName:@"death.jpg" andTitle:@"Death"],
-                                [[FPYNamedImage alloc] initWithImageName:@"duck.jpeg" andTitle:@"Duck"],
-                                [[FPYNamedImage alloc] initWithImageName:@"puppy.jpeg" andTitle:@"Puppy"],
-                                 nil];
+    if (self) {
+        [self readData];
     }
     return self;
 }
 
--(FPYNamedImage *)getNamedImageAtIndex:(NSUInteger)row{
-    FPYNamedImage *temp = [namedImagesAndTitles objectAtIndex:row];
+-(void)addNewItem:(FPYNamedImage *)item
+{
+    if (item != nil)
+    {
+        [self.contentData addObject:item];
+        [self saveData];
+    }
+}
+
+-(FPYNamedImage *)namedImageAtIndex:(NSUInteger)row {
+    FPYNamedImage *temp = [self.contentData objectAtIndex:row];
+    
     return temp;
 }
 
--(NSInteger)getItemsCount{
+-(NSInteger)count {
     
-    return [namedImagesAndTitles count];
+    return [self.contentData count];
+}
+
+-(NSString *)fileName
+{
+    return @"Data";
+}
+
+-(NSString *)pathToData
+{
+    return [[NSBundle mainBundle] pathForResource:[self fileName] ofType:@"plist"];
+}
+
+-(void)saveData {
+    NSMutableArray *rawData = [[NSMutableArray alloc] init];
+    for (int i = 0; i < self.contentData.count; i++) {
+        FPYNamedImage *tempNameImage = [self.contentData objectAtIndex:i];
+        [rawData addObject:[tempNameImage objectToDictionary]];
+    }
+    NSString *path = [self pathToData];
+    [rawData writeToFile:path atomically:YES];
+    
+}
+
+-(void)readData {
+    NSString *path = [self pathToData];
+    NSArray *rawData = [NSArray arrayWithContentsOfFile:path];
+    self.contentData = [NSMutableArray new];
+    for (int i = 0; i < rawData.count; i++) {
+        NSDictionary *objectFromRawData = [rawData objectAtIndex:i];
+        FPYNamedImage *objectForAdd = [[FPYNamedImage alloc] initWithDictionary:objectFromRawData];
+        [self.contentData addObject:objectForAdd];
+    }
 }
 
 @end

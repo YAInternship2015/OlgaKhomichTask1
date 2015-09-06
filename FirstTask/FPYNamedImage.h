@@ -7,13 +7,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface FPYNamedImage : NSObject{
-    NSString *imageName1;
-    NSString *title1;
-}
+@interface FPYNamedImage : NSObject
 
--(instancetype)initWithImageName:(NSString *)imageName andTitle:(NSString *)title;
--(UIImage *)getImage;
--(NSString *)getTitle;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) UIImage *image;
+
+-(instancetype)initWithImageName:(NSString *)initialImageName title:(NSString *)initialTitle;
+-(instancetype)initWithDictionary:(NSDictionary *)dictionary;
+-(NSDictionary *)objectToDictionary;
 
 @end
