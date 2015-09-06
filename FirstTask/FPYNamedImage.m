@@ -6,13 +6,6 @@
 
 #import "FPYNamedImage.h"
 
-@interface FPYNamedImage()
-
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) UIImage *image;
-
-@end
-
 @implementation FPYNamedImage {
     NSString *_imageName;
 }
@@ -33,8 +26,8 @@
     self = [super init];
     
     if (self) {
-        self.title = dictionary[@"title"];
-        _imageName = dictionary[@"image"];
+        self->_title = dictionary[@"title"];
+        self->_imageName = dictionary[@"image"];
     }
     return self;
 }
@@ -45,8 +38,6 @@
 
 
 -(UIImage *)image {
-    //return [UIImage imageNamed:self->_imageName];
-    
     UIImage *result = [UIImage imageNamed:_imageName];
     
     if (result == nil)
