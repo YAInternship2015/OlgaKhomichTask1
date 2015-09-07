@@ -16,6 +16,12 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.collectionView reloadData];
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
     return 1;
