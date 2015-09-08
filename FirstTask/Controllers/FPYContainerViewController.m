@@ -31,7 +31,9 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+
+#warning у каждого контроллера должен быть свой отдельный датасорс. Не нужно его перекидывать от контроллера к контроллеру
+
     if ([segue.identifier isEqualToString:SegueIdentifierFirst]) {
         self.tableViewController = segue.destinationViewController;
         self.tableViewController.contentData = self.dataSource;
@@ -50,6 +52,7 @@
             [self addChildViewController:segue.destinationViewController];
             UIView* destView = ((UIViewController *)segue.destinationViewController).view;
             destView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+#warning здесь можно написать просто destView.frame = self.view.bounds
             destView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
             [self.view addSubview:destView];
             [segue.destinationViewController didMoveToParentViewController:self];
@@ -62,6 +65,7 @@
 
 - (void)swapFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController
 {
+#warning здесь можно написать просто toViewController.view.frame = self.view.bounds
     toViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     
     [fromViewController willMoveToParentViewController:nil];

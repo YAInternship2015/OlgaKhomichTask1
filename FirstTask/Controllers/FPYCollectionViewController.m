@@ -14,8 +14,11 @@
 
 @implementation FPYCollectionViewController
 
+#warning это лучше вынести в саму ячейку
 static NSString * const reuseIdentifier = @"Cell";
 
+#warning если у контроллера будет свой личный датасорс, то не будет необходимости перезагружать контент при каждом появлении на дисплее
+#warning открывающаяся фигурная собка должна быть на той же строке, что и имя метода. Это много где встречается у Вас, исправьте везде
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -23,7 +26,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    
+#warning не нужно оставлять пустые строки после имени метода
     return 1;
 }
 

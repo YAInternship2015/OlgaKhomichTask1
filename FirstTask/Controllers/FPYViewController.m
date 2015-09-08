@@ -14,6 +14,7 @@
 @property (nonatomic, weak) FPYContainerViewController *containerViewController;
 @property (nonatomic, strong) FPYDataSource *dataSource;
 
+#warning это можно не писать
 - (IBAction)swapButtonPressed:(id)sender;
 
 @end
@@ -28,6 +29,7 @@
 
 -(FPYDataSource *)dataSource
 {
+#warning вместо self->_dataSource лучше писать просто _dataSource
     if (self->_dataSource == nil)
     {
         self->_dataSource = [FPYDataSource new];
@@ -36,6 +38,7 @@
     return self->_dataSource;
 }
 
+#warning этот метод не нужен
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
